@@ -1,4 +1,4 @@
-import click
+ import click
 import sys, os
 from bench.config.common_site_config import get_config
 from bench.app import pull_all_apps, is_version_upgrade

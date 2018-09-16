@@ -59,7 +59,7 @@ def confirm_testing():
 	print('')
 	print('================ CAUTION ==================')
 	print('Never miss this, even if it is a really small release!!')
-	print('Manual Testing Checklisk: https://github.com/frappe/bench/wiki/Testing-Checklist')
+	print('Manual Testing Checklisk: https://github.com/wellart/bench/wiki/Testing-Checklist')
 	print('')
 	print('')
 	click.confirm('Is manual testing done?', abort = True)

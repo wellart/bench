@@ -288,7 +288,7 @@ def setup_roles(role, **kwargs):
 		run_playbook('site.yml', extra_vars=extra_vars)
 
 @click.command('fail2ban')
-@click.option('--maxretry', default=6, help="Number of matches (i.e. value of the counter) which triggers ban action on the IP. Default is 6 seconds" )
+@click.option('--maxretry', default=15, help="Number of matches (i.e. value of the counter) which triggers ban action on the IP. Default is 6 seconds" )
 @click.option('--bantime', default=600, help="The counter is set to zero if no match is found within 'findtime' seconds. Default is 600 seconds")
 @click.option('--findtime', default=600, help='Duration (in seconds) for IP to be banned for. Negative number for "permanent" ban. Default is 600 seconds')
 def setup_nginx_proxy_jail(**kwargs):
